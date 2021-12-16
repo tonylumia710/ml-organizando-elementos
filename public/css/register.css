@@ -1,0 +1,161 @@
+body{
+    background-color: var(--color-gris-claro);
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--color-amarillo);
+    /* font-size: 12px; */
+}
+header section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+header .logo{
+    width:50%;
+    height: 50%;
+    display: inline;
+}
+header form{
+    display: flex;
+}
+header input{
+    width: 120px;
+    height: 15px;
+}
+header button{
+    width: 20px;
+    height: 20px;
+}
+header p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header nav ul{
+    display: none;
+}
+header nav ul:last-child{
+    margin-bottom: 0;
+}
+
+.fa-bars{
+    color: white;
+}
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger-menu i{
+    background-color: var(--color-azul);
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+form.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 30px;
+    padding: 10px;
+    border: solid 1px var(--color-celeste)
+}
+
+
+form.register p.perfil{
+    justify-content: space-around;
+}
+
+form.register span.intereses{
+    display: inline;
+}
+
+form.register input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form.register button{
+    background-color: var(--color-celeste);
+    color: #fff;
+    margin: 15px;
+    width: 100px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+form.register button:hover{
+    background-color: #0022AA;
+}
+
+footer{
+    background-color: white;
+    padding: 50px 0 10px;
+}
+footer article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer article div i{
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+footer article div i:hover{
+    color: var(--color-verde);
+}
+
+footer article{
+    text-align: center;
+    color: var(--color-grisoscuro);
+    /* margin-top: 35px; */
+    margin-bottom: 50px;
+}
+footer p{ 
+    color: var(--color-grisoscuro);
+}
+
+
+@media (min-width:361px){
+
+    header section{
+        margin-right: 20px;
+    }
+
+    header .barra-de-busqueda{
+        margin: 0 25px;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+    header li{
+        margin: 25px 7px 0;
+    }
+     .burger-menu{  
+    display: none;
+    } 
+}
+
+@media (min-width:768px){
+    header nav ul {
+        display: inline-flex;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

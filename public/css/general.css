@@ -1,0 +1,24 @@
+:root{ /* creamos variables con :root para que podamos poner colores con nombres mas faciles */
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-grisoscuro: #666;
+    --color-grisclaro: #ebebeb;
+    --color-verde: #39b54a;;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto';
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    list-style: none;
+    color: black;
+}
